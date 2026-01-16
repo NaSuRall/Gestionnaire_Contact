@@ -1,0 +1,30 @@
+Pour ce petit projet je Vais realiser un gestionnaire de Contact : 
+
+c'est a dire Que je recois des Personne depuis un CSV je les annalyse et le Stock en Fichier JSON 
+
+Objectif : 
+  - Lire et retourner en OBJ les données des Fichier CSV
+  - Convertir ce Données en JSON 
+  - Ecrire en Fichier JSON avec les Données Convertis
+  - Pour pouvoir ensuite avec des données a Lire au lancement du Programme
+
+
+Mon Programme Doit avoir un Menu CLI, Voir pour utilisation de CLAP 
+
+Pour la Structure du projet : 
+
+Fichier main : 
+
+  - Appel du fichier : menu.rs ( Menu du gestionnaire )
+  - models : personne.rs ( Struct pour obj Personne )
+  - services : 
+      (- contact_manager : fn pour gerer les contact / CREE / MODIFIER / AJOUTER / SUPPRIMER)
+      - csv_reader : fn pour lire les fichier CSV et retourner en OBJ personne
+      - json_store : fn pour convertire obj personne en JSON et crée le fichier 
+
+Cargo.toml : 
+
+  - csv_reader
+  - serde feature derive 
+  - serde_json
+  (autre)
