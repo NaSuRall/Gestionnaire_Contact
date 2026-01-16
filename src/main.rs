@@ -5,7 +5,7 @@ mod write;
 fn main() {
     let csv = vec!["Personne.csv"];
     let csv_read = reader_service::reader_multi(csv);
-    let file_name: &str = "csv.sjon";
+    let file_name: &str = "csv.json";
     let create_folder = write::create(file_name);
     if create_folder.is_ok() {
         println!("File Create")
