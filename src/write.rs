@@ -1,3 +1,4 @@
+use std::fs;
 use std::fs::File;
 use std::fs::OpenOptions;
 use std::io::prelude::*;
@@ -15,4 +16,10 @@ pub fn write(json_file: String) -> std::io::Result<()> {
     let result = json_file.as_bytes();
     let _ = file.write_all(result);
     Ok(())
+}
+
+pub fn read(file_name: &str) {
+    let file = fs::read_to_string(file_name);
+
+    println!("{:?}", file);
 }

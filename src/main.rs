@@ -5,8 +5,8 @@ mod write;
 fn main() {
     let csv = vec!["Personne.csv"];
     let csv_read = reader_service::reader_multi(csv);
-
-    let create_folder = write::create("csv.json");
+    let file_name: &str = "csv.sjon";
+    let create_folder = write::create(file_name);
     if create_folder.is_ok() {
         println!("File Create")
     }
@@ -15,4 +15,6 @@ fn main() {
     if write_folder.is_ok() {
         println!("Json Ajouter")
     }
+
+    let _ = write::read(file_name);
 }
