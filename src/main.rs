@@ -17,4 +17,7 @@ fn main() {
     }
 
     let _ = write::read(file_name);
+
+    // on est samedi woula je peux pas coder il y a l'annive
+    // surment ce soir mais pas sur re rentrer aveant 00h
 }
