@@ -26,3 +26,5 @@ pub fn reader_multi(files: Vec<&str>) -> String {
 
     serde_json::to_string(&result).unwrap()
 }
+
+// Add function to read jsp on est dimanche frr
