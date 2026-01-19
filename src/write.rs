@@ -23,3 +23,5 @@ pub fn read(file_name: &str) {
 
     println!("{:?}", file);
 }
+
+// j'ai appris a utiliser Dioxus et a crée le projet sur le Serveur linux Ubuntu
